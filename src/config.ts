@@ -32,6 +32,59 @@ Do NOT use for hashing data -- use crypto_generate_hash instead. Do NOT use for 
         },
         required: ["token"],
       },
+      outputSchema: {
+          "type": "object",
+          "properties": {
+            "header": {
+              "type": "object",
+              "description": "JWT header (alg, typ)"
+            },
+            "payload": {
+              "type": "object",
+              "description": "JWT payload claims"
+            },
+            "claims": {
+              "type": "object",
+              "properties": {
+                "issuer": {
+                  "type": "string"
+                },
+                "subject": {
+                  "type": "string"
+                },
+                "audience": {
+                  "type": "string"
+                },
+                "issuedAt": {
+                  "type": "string"
+                },
+                "expiresAt": {
+                  "type": "string"
+                },
+                "isExpired": {
+                  "type": "boolean"
+                },
+                "expiresInSeconds": {
+                  "type": "number"
+                }
+              }
+            },
+            "hasSignature": {
+              "type": "boolean"
+            },
+            "algorithm": {
+              "type": "string"
+            },
+            "tokenType": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "header",
+            "payload",
+            "claims"
+          ]
+        },
     },
   ],
 };
