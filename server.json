@@ -12,7 +12,7 @@
   "remotes": [
     {
       "type": "sse",
-      "url": "https://jwt-decoder-x402-production.up.railway.app/mcp"
+      "url": "https://jwt-decoder.api.klymax402.com/mcp"
     }
   ]
 }
