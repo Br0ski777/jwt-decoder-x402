@@ -9,7 +9,7 @@ export const API_CONFIG: ApiConfig = {
     {
       method: "POST",
       path: "/api/decode",
-      price: "$0.001",
+      price: "$0.003",
       description: "Decode a JWT token without signature verification",
       toolName: "security_decode_jwt",
       toolDescription: `Use this when you need to decode and inspect a JWT token without verifying its signature. Returns the full header, payload, and expiration status.
