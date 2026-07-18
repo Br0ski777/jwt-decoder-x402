@@ -37,7 +37,7 @@ Any x402-aware client ([`@x402/fetch`](https://www.npmjs.com/package/@x402/fetch
 
 | Tool | Method | Path | Price | Description |
 |---|---|---|---|---|
-| `security_decode_jwt` | POST | `/api/decode` | $0.001 | Decode a JWT token without signature verification |
+| `security_decode_jwt` | POST | `/api/decode` | $0.003 | Decode a JWT token without signature verification |
 
 ### `security_decode_jwt`
 
